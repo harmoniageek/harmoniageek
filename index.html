@@ -25,7 +25,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 15px; /* espaço entre ícones */
+      gap: 15px;
       flex-wrap: wrap;
     }
 
@@ -57,7 +57,8 @@
 
     /* Imagem adicionada abaixo */
     .bottom-img {
-      width: 450px;    /* tamanho inicial */
+      width: 450px;     /* tamanho padrão */
+      max-width: 100%;  /* responsiva em telas menores */
       height: auto;
       margin-top: 20px;
       cursor: pointer;
@@ -67,7 +68,7 @@
     @media (max-width:600px){
       .top-img{ width:95%; }
       .social-icons a img, .extra-img { width: 36px; }
-      .bottom-img { width: 90px; }
+      .bottom-img { width: 95%; } /* garante ajuste no celular */
     }
   </style>
 </head>
