@@ -26,11 +26,11 @@
       justify-content: center;
       align-items: center;
       gap: 15px; /* espaço entre ícones */
-      flex-wrap: wrap; /* evita quebra em telas pequenas */
+      flex-wrap: wrap;
     }
 
     .social-icons a img {
-      width: 40px;   /* tamanho padrão dos ícones */
+      width: 40px;
       height: auto;
       cursor: pointer;
       transition: transform 0.2s ease-in-out;
@@ -40,27 +40,34 @@
       transform: scale(1.1);
     }
 
-    /* Imagens extras (não são links) */
+    /* Imagens extras */
     .extra-img {
-      width: 40px; /* tamanho inicial */
+      width: 40px;
       height: auto;
       cursor: grab;
     }
 
-    /* Imagem extra à esquerda do Instagram */
     .extra-img.esquerda {
       margin-right: 10px;
     }
 
-    /* Imagem extra à direita do TikTok → movida 1px mais à direita */
     .extra-img.direita {
-      margin-left: 6px;  /* antes era 5px */
+      margin-left: 6px;
+    }
+
+    /* Imagem adicionada abaixo */
+    .bottom-img {
+      width: 450px;    /* tamanho inicial */
+      height: auto;
+      margin-top: 20px;
+      cursor: pointer;
     }
 
     /* pequenas telas */
     @media (max-width:600px){
       .top-img{ width:95%; }
       .social-icons a img, .extra-img { width: 36px; }
+      .bottom-img { width: 90px; }
     }
   </style>
 </head>
@@ -68,33 +75,31 @@
   <!-- Imagem principal -->
   <img class="top-img" src="https://i.imgur.com/kWqWvtH.png" alt="Imagem Topo">
 
-  <!-- Ícones sociais e imagens extras -->
+  <!-- Ícones sociais -->
   <div class="social-icons">
-    <!-- Imagem extra à esquerda do Instagram -->
     <img class="extra-img esquerda" src="https://i.imgur.com/TxKg7oR.png" alt="Imagem Extra Esquerda">
 
-    <!-- Instagram -->
     <a href="https://www.instagram.com/harmonia_geek?igsh=ejZldWEycmw5MWV5" target="_blank" rel="noopener noreferrer">
       <img src="https://i.imgur.com/g0uFcQg.png" alt="Instagram">
     </a>
 
-    <!-- X (Twitter) -->
     <a href="https://x.com/harmonia_geek?t=PYVyJuguFezgtKcfklopXQ&s=09" target="_blank" rel="noopener noreferrer">
       <img src="https://i.imgur.com/P7E6c2w.png" alt="X">
     </a>
 
-    <!-- YouTube -->
-    <a href="https://youtube.com/@harmonia_geek?si=b7VP_ImGdBOuaQwY" target="_blank" rel="noopener noreferrer">
+    <a href="https://youtube.com/@harmonia_geek?si=0qcXZhOQM78jbBCe" target="_blank" rel="noopener noreferrer">
       <img src="https://i.imgur.com/QwAdopW.png" alt="YouTube">
     </a>
 
-    <!-- TikTok -->
     <a href="https://www.tiktok.com/@harmonia_geek?_t=ZM-90BqrZc4P2B&_r=1" target="_blank" rel="noopener noreferrer">
       <img src="https://i.imgur.com/WlscH4k.png" alt="TikTok">
     </a>
 
-    <!-- Imagem extra à direita do TikTok -->
     <img class="extra-img direita" src="https://i.imgur.com/kwwzjtL.png" alt="Imagem Extra Direita">
   </div>
+
+  <!-- Imagem nova abaixo dos ícones -->
+  <img class="bottom-img" src="https://i.imgur.com/zv6WR8C.png" alt="Imagem Abaixo">
+
 </body>
 </html>
