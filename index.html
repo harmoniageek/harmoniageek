@@ -57,17 +57,22 @@
 
     /* Imagem adicionada abaixo */
     .bottom-img {
-      width: 400px;   /* tamanho padrão para PC */
+      width: 400px;   /* padrão para PC */
       height: auto;
       margin-top: 20px;
       cursor: pointer;
     }
 
-    /* pequenas telas */
+    /* tablets */
+    @media (max-width:900px){
+      .bottom-img { width: 300px; }
+    }
+
+    /* celulares */
     @media (max-width:600px){
       .top-img{ width:95%; }
       .social-icons a img, .extra-img { width: 36px; }
-      .bottom-img { width: 200px; } /* reduzida para celular */
+      .bottom-img { width: 300px; } /* mantém 300 no celular */
     }
   </style>
 </head>
